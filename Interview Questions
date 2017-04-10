@@ -1,0 +1,47 @@
+Jenkins is a Java Based application, having all the plugins written in Java.
+Anyone can create plugins in Java.
+
+1@    Please specify the directory of Jenkins
+  /var/lib/jenkins
+
+2@    Plugins Directory of Jenkins
+  /var/lib/jenkins/plugins
+
+3@    Hudson Vs Jenkins
+  Jenkins is the updated version of jenkins
+
+4@    Install avaiable in Plugin manager 
+  Updates and Plugins are
+
+5@    1492 Plugins
+
+6@    Default Branch call by jenkins
+  master only, when not defined
+7@      Workspace
+  /var/lib/jenkins/workspace
+it saves only last ran Job to keep its work space
+
+8@    To save multiple workspaces
+  Archive build plugin saves multiple workspaces
+
+8@    Where all the Jobs get stored
+  /var/lib/jenkins/jobs
+  
+9@    What need to be backup for Jenkins
+
+    /etc/default/jenkins
+    /etc/lib/jenkins <Directory>
+    The Directory includes 
+    /users
+    /jobs
+  
+Issues
+1#  Issue:[root@host-master jenkins]# /etc/init.d/jenkins start
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+Starting Jenkins shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+
+This happens when your current directory does't exists
+
+2#  The Latest Jenkins works with Java 8 
+other wise it shows 503 Error
+with Jetty response
